@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  main {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  body {
+    padding: 20px;
+  }
+}
+main > div {
+  padding: 45px 35px;
+}
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 991px) {
+  .card1 {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 991px) {
+  .card3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.image {
+  margin-bottom: 25px;
+}
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  transition: 0.3s background-color, 0.3s border, 0.3s color;
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%) !important;
+}
+.card1 button {
+  color: hsl(31, 77%, 52%);
+}
+.card2 button {
+  color: hsl(184, 100%, 22%);
+}
+.card3 button {
+  color: hsl(179, 100%, 13%);
+}
